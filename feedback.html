@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Feedback - Samurai Legend</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+</head>
+<body>
+    <header>
+        <h1>Contact & Feedback</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="support.html">Support</a>
+            <a href="corporate.html">Corporate</a>
+        </nav>
+    </header>
+
+    <section id="contact-feedback">
+        <h2>We'd Love to Hear from You</h2>
+        <p>Whether you have a question about our katanas, need support, or just want to give us feedback, feel free to reach out.</p>
+        
+        <h3>Email</h3>
+        <p>info@samurailegend.com</p>
+
+        <h3>Phone</h3>
+        <p>+1 (123) 456-7890</p>
+
+        <h3>Address</h3>
+        <p>123 Samurai St., Tokyo, Japan</p>
+
+        <form id="contact-feedback-form">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="rating">Rating (1-5):</label><br>
+            <input type="number" id="rating" name="rating" min="1" max="5" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

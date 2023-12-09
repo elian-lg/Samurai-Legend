@@ -1,0 +1,174 @@
+body {
+    font-size: 18px;
+    font-weight: bold;
+    overflow-x: hidden;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('../images/sakura-samurai.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(173, 216, 230);
+    text-align: center;
+    padding-top: 70px; /* Add a top padding to prevent overlap with the header */
+}
+
+header {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+header h1, header a, nav a {
+    margin: 0;
+    font-size: 24px;
+    color: rgb(173, 216, 230);
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a.active {
+    display: none;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+#introduction {
+    margin-top: 70px;
+}
+
+.popup {
+    background: #2e2e2e; 
+    padding: 20px;
+    color: rgb(173, 216, 230);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
+}
+
+#age-verify-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #4caf50; 
+    color: #f0f0f0; 
+    border: none;
+    border-radius: 5px;
+}
+
+#age-decline-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #ff0000;
+    color: #ffffff; 
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Style for Katana Showcase Section */
+.katana-item h3 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.katana-item p {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#katana-showcase {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.katana-item {
+    position: relative;
+    overflow: hidden; /* Hide the parts of the description that go outside the .katana-item */
+}
+
+.katana-item img {
+    display: block; /* Remove the space below the image */
+    width: 100%; /* Make sure the image takes up the full width of its container */
+    transition: transform 0.3s ease; /* Add a transition effect to the image */
+}
+
+.katana-item:hover img {
+    transform: scale(1.1); /* Zoom in on the image when hovered */
+}
+
+.katana-item div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    transition: bottom 0.3s ease;
+    bottom: -100%; /* Initially hide the description at the bottom */
+}
+
+.katana-item:hover div {
+    bottom: 0; /* Move the description up to the bottom of the .katana-item on hover */
+}
+
+/* Support Form Styles */
+#support-form {
+    margin-top: 50px;
+}
+
+#support-form label {
+    display: block;
+    margin-top: 20px;
+}
+
+#support-form input[type="text"],
+#support-form input[type="email"],
+#support-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+#support-form input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #4caf50;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#support-form p {
+    margin-top: 20px;
+    color: rgb(173, 216, 230);
+}
